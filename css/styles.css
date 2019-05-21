@@ -1,0 +1,73 @@
+/*-----------------------------------------------*\
+Index
+- Color Palette
+- General
+- Typography
+- Buttons
+- Forms
+- Layout
+- Messaging & Status
+- Navigation
+- Carousel
+- Jumbotron
+\*-----------------------------------------------*/
+
+/*-------Color Palette--------*/
+
+/*-------General--------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    width: 100%;
+    display: block;
+}
+.site-header {
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+.site-footer {
+    display: block;
+    width: 100%;
+    min-height: 2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+.wrap {
+    display: block;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+
+/*-------Typography--------*/
+
+body {
+    font-size: 1.6rem;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li > a {
+    color: black;
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: red;
+    text-decoration: none;
+}
