@@ -6,6 +6,7 @@ class UI {
 const palindromeForm = document.getElementById("palindromeForm");
 const submit = document.getElementById("submit");
 const palResult = document.getElementById("palResult");
+const palInfo = document.getElementById("palInfo");
 
 
 function main(formInput) {
@@ -30,8 +31,10 @@ function palindrome() {
     }
 
     if (results === 0) {
-        palResult.innerHTML = "It's a palindrome!";
+        palInfo.innerHTML = `Your entry has ${simpleStr.length} letters in it`;
+        palResult.innerHTML = "and it's a palindrome!";
     } else {
+        palInfo.innerHTML = `Your entry has ${simpleStr.length} letters in it.`;
         palResult.innerHTML = "Sorry, it's not a palindrome!";
     }
 }

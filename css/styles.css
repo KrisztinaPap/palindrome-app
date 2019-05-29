@@ -50,6 +50,9 @@ Index
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    align-content: center;
 }
 
 .site-container {
@@ -84,7 +87,11 @@ Index
     border: 4px solid rgba(191, 3, 3, 1);
     height: 60vh;
     margin: 10px auto;
-    justify-content: center;
+    padding-top: 1rem;
+}
+
+#palindromeForm {
+    line-height: 2rem;
 }
 
 /*-------Typography--------*/
@@ -112,12 +119,41 @@ li > a:hover {
 .site-title {
     color: antiquewhite;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
     padding-top: 20px;
 }
+
+#formInput {
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 80%;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.button {
+    
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 
 /*--------Media queries---------*/
 
 @media only screen and (min-width: 768px) {
+    * {
+        font-size: 1.4rem;
+    }
     ul {
         flex-wrap: nowrap;
         flex-direction: row;
